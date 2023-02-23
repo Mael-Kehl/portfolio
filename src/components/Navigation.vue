@@ -5,8 +5,9 @@
         </div>
         <ul>
             <li @click="$emit('setCurrentPage', 1)">Projects</li>
-            <li >Studies</li>
-            <li>Contact</li>
+            <li @click="$emit('setCurrentPage', 2)">Career</li>
+            <li @click="$emit('setCurrentPage', 3)">Studies</li>
+            <li @click="$emit('setCurrentPage', 4)">Contact</li>
         </ul>
         
     </header>
@@ -30,7 +31,7 @@ const emits = defineEmits(['setCurrentPage']);
 
     #home-part{
         height: 100%;
-        width: 50%;
+        width: 40%;
         display: flex;
         align-items: center;
         padding: 0 40px;
@@ -38,12 +39,13 @@ const emits = defineEmits(['setCurrentPage']);
     }
 
     ul {
-        width: 50%;
+        width: 60%;
         height: 15vh;
         display: flex;
         justify-content: space-around;
         align-items: center;
         list-style: none;
+        padding: 0 100px;
     }
     
     li {

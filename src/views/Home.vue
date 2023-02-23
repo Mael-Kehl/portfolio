@@ -20,7 +20,7 @@
 
 
 <script>
-import Scene from './Scene.vue';
+import Scene from '../components/Scene.vue';
 
 
 export default {
