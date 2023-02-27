@@ -1,9 +1,10 @@
 <template>
   <main>
-    <Navigation @set-current-page="setCurrentPage"/>
+    <Navigation @set-current-page="setCurrentPage" :currentPage="currentPage"/>
     <Transition name="views" appear>
       <Home v-if="currentPage === HOME_PAGE" @set-current-page="setCurrentPage"/>
       <Contact v-else-if="currentPage === CONTACT_PAGE"/>
+      <Projects v-else-if="currentPage === PROJECTS_PAGE"/>
     </Transition>
   </main>
 </template>
@@ -13,10 +14,11 @@
 import Navigation from './components/Navigation.vue';
 import Home from './views/Home.vue';
 import Contact from './views/Contact.vue';
+import Projects from './views/Projects.vue';
 import { ref } from 'vue';
 
 export default {
-  components: {Navigation, Home, Contact},
+  components: {Navigation, Home, Contact, Projects},
   data() {
     return {
       currentPage: 0,

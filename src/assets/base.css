@@ -6,7 +6,11 @@
     box-sizing: border-box;
 }
 
+* {
+    --beige-color: #EDD59B;
+}
+
 body{
     font-family: 'Inter', sans-serif;
-    background-color: #EDD59B;
+    background-color: var(--beige-color);
   }
