@@ -3,7 +3,7 @@
     <Navigation @set-current-page="setCurrentPage" :currentPage="currentPage"/>
     <Transition name="views" appear>
       <Home v-if="currentPage === HOME_PAGE" @set-current-page="setCurrentPage"/>
-      <About v-else-if="currentPage === CAREER_PAGE"/>
+      <About v-else-if="currentPage === ABOUT_PAGE"/>
       <Contact v-else-if="currentPage === CONTACT_PAGE"/>
       <Projects v-else-if="currentPage === PROJECTS_PAGE"/>
     </Transition>
@@ -26,7 +26,7 @@ export default {
       currentPage: 0,
       HOME_PAGE: 0,
       PROJECTS_PAGE: 1,
-      CAREER_PAGE: 2,
+      ABOUT_PAGE: 2,
       STUDIES_PAGE: 3,
       CONTACT_PAGE: 4,
     }

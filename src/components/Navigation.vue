@@ -1,11 +1,12 @@
 <template>
     <header>
         <div id="home-part">
-            <HomeIcon :width="40" :height="40" @click="$emit('setCurrentPage', 0)"/>
+            <!-- <HomeIcon :width="40" :height="40" @click="$emit('setCurrentPage', 0)"/> -->
+            <h1 class="home-logo" @click="$emit('setCurrentPage', 0)">MK</h1>
         </div>
         <ul>
             <li @click="$emit('setCurrentPage', 1)" :class=" currentPage == 1 ? 'active' : '' ">Projects</li>
-            <li @click="$emit('setCurrentPage', 2)" :class=" currentPage == 2 ? 'active' : '' ">Career</li>
+            <li @click="$emit('setCurrentPage', 2)" :class=" currentPage == 2 ? 'active' : '' ">About</li>
             <li @click="$emit('setCurrentPage', 3)" :class=" currentPage == 3 ? 'active' : '' ">Studies</li>
             <li @click="$emit('setCurrentPage', 4)" :class=" currentPage == 4 ? 'active' : '' ">Contact</li>
         </ul>
@@ -32,6 +33,13 @@ export default {
 
 
 <style scoped>
+
+    .home-logo {
+        font-size: 40px;
+        cursor: pointer;
+    }
+
+
     header {
         height: 15vh; 
         width: 100vw;
@@ -60,6 +68,7 @@ export default {
     li {
         cursor: pointer;
         transition: all 0.1s ease-in-out;
+        font-size: 25px;
     }
 
     .active {

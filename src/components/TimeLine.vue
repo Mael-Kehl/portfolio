@@ -2,10 +2,10 @@
     <div class="container" v-for="place in this.places">
         <aside>
             <div v-if="place.isFinished" class="date-circle">
-                {{ place.begin }}-{{ place.end }}
+                <span>{{ place.begin }}-{{ place.end }}</span>
             </div>
             <div v-else class="date-circle">
-                {{ place.begin }}
+                <span>{{ place.begin }}</span>
             </div>
             <div v-if="!place.isFirst" class="linking-line">
             </div>
@@ -51,20 +51,25 @@ p {
     width: 400px;
 }
 
+span {
+    transform: rotate(-45deg);
+}
+
 .date-circle {
-    width: 120px;
-    height: 120px;
+    width: 110px;
+    height: 110px;
     display: flex;
+    transform: rotate(45deg);
+    border-radius: 10px;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
     background-color: var(--text-color);
     color: var(--background-color);
 }
 
 .linking-line {
     background-color: var(--text-color);
-    width: 5px;
+    width: 8px;
     height: 100px;
 }
 
@@ -74,6 +79,7 @@ aside {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-right: 10px;
 }
 
 .container{

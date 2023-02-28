@@ -1,9 +1,9 @@
 <template>
     <section>
         <div class="contribution-title">
-            <h1>
+            <h2>
                 Contribution history 
-            </h1>
+            </h2>
             <GithubIcon :height="35" :width="35"/>
         </div>
         <aside>
@@ -96,7 +96,7 @@ export default {
 <style scoped>
 
 
-    h1{
+    h2{
         text-transform: uppercase;
         margin-right: 10px;
     }

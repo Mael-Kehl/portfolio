@@ -1,8 +1,8 @@
 <template>
     <section>
         <div class="title-container">
-            <h1> Contact </h1>
-            <PhoneIcon :width="40" :height="40" />
+            <h1 class="underline"> Contact </h1>
+            <PhoneIcon :width="60" :height="60" />
         </div>
         <div class="contact-fields-container">
             <article  class="contact-field">
@@ -102,7 +102,6 @@ section {
 
 .title-container > h1 {
     margin-right: 20px;
-    font-size: 40px;
 }
 
 .contact-field {

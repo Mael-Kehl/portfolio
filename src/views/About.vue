@@ -1,20 +1,32 @@
 <template>
     <section>
-        <article>
-            <h1>
-                Studies
-            </h1>
-            <TimeLine :places="studies"/>
-        </article>
-        <article>
-            <h1>
-                experiences
-            </h1>
-            <TimeLine :places="experiences"/>
-        </article>
-     
-        
-
+        <h1 class="underline">
+            ABOUT
+        </h1>
+        <aside>
+            <img src="/src/assets/images/profile-pic.jpg" alt="profile picture">
+            <div>
+                <p>
+                Hey, I'm Maël, a French passionate developper and apprentice engineer born in the Montains of the Vosges. 
+                After a two year computer science degree, I'm preparing a dual studies <strong>engineer</strong> diploma while proposing freelance services.
+                Otherwise, I love cinema, playing sport and hanging out with friends. 
+            </p>
+            </div>
+        </aside>
+        <div class="timeline-container">
+            <article>
+                <h2>
+                    Studies
+                </h2>
+                <TimeLine :places="studies"/>
+            </article>
+            <article>
+                <h2>
+                    experiences
+                </h2>
+                <TimeLine :places="experiences"/>
+            </article>
+        </div>
     </section>
 </template>
 
@@ -40,21 +52,47 @@ export default {
 <style scoped>
 
 section {
-    padding: 0 170px;
+    padding: 50px 170px;
     width: 100%;
-    display: flex;
-    justify-content: space-around;
 }
 
 h1 {
-    font-size: 30px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 25px;
     margin-bottom: 40px;
     text-transform: uppercase;
     width: fit-content;
     border-bottom: 3px solid var(--text-color);
 }
 
+p {
+    width: 500px;
+    text-align: justify;
+    font-size: 18px;
+}
 
+img {
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    margin-right: 100px;
+}
+
+
+.timeline-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+aside {
+    margin: 80px 0 80px 0;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
 
 
 </style>
