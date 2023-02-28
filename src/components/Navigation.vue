@@ -1,7 +1,7 @@
 <template>
     <header>
-        <div id="home-part" @click="$emit('setCurrentPage', 0)">
-            Home
+        <div id="home-part">
+            <HomeIcon :width="40" :height="40" @click="$emit('setCurrentPage', 0)"/>
         </div>
         <ul>
             <li @click="$emit('setCurrentPage', 1)" :class=" currentPage == 1 ? 'active' : '' ">Projects</li>
@@ -15,11 +15,15 @@
 
 
 <script>
+import HomeIcon from './icons/HomeIcon.vue';
 
 export default {
   emits: ['setCurrentPage'],
   props: {
     currentPage: Number
+  },
+  components: {
+    HomeIcon
   }
 }
 
@@ -41,7 +45,6 @@ export default {
         display: flex;
         align-items: center;
         padding: 0 40px;
-        cursor: pointer;
     }
 
     ul {
@@ -62,7 +65,7 @@ export default {
     .active {
         border-radius: 15px;
         padding: 10px 15px;
-        background-color: #3a3a3a;
+        background-color: var(--dark-grey-color);
         color: white;
     }
 

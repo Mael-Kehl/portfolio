@@ -41,19 +41,20 @@ export default {
 
 
 <style>
-  @import url('./assets/base.css');
+  @import url('/assets/base.css');
 
   main {
     display: flex;
     flex-direction: column;
+    overflow: hidden;
   }
 
   /* Transition element properties */
   .views-enter-active {
-    animation: slide-in 0.5s;
+    animation: slide-in 0.6s;
   }
   .views-leave-active {
-    animation: slide-out 0.25s;
+    animation: slide-out 0.2s;
   }
 
   /* 

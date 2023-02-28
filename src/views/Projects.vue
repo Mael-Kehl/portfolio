@@ -1,6 +1,8 @@
 <template>
     <section class="projects-container">
-        <GithubContributions />
+        <KeepAlive>
+            <GithubContributions />
+        </KeepAlive>
     </section>
 </template>
 

@@ -14,7 +14,9 @@
             <p id="projects-text">Through my projects</p>
         </div>
     </div>
-    <Scene />
+    <KeepAlive>
+        <Scene /> 
+    </KeepAlive>
   </section>
 </template>
 
@@ -74,7 +76,7 @@ export default {
         height: 40px;
         border: none;
         border-radius: 15px;
-        background-color: #3a3a3a;
+        background-color: var(--dark-grey-color);
         color: #fff;
         margin-right: 20px;
         cursor: pointer;
