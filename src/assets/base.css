@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* {
+    --beige-color: #EDD59B;
+    --dark-grey-color: #2a2a2a;
+    --background-color: var(--beige-color);
+    --text-color: var(--dark-grey-color);
+}
+
+/* These classes are used to switch from clear to dark mode */
+.clear-mode {
+    --background-color: var(--beige-color);
+    --text-color: var(--dark-grey-color);
+}
+
+.dark-mode {
+    --background-color: var(--dark-grey-color);
+    --text-color: var(--beige-color);
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+a {
+    text-decoration: underline;
+    color: var(--text-color);
+}
+
+button {
+    background-color: var(--dark-grey-color);
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+}

@@ -9,7 +9,7 @@
         cast-shadow :shadow-camera="{ top: 180, bottom: -120, left: -120, right: 120 }"
       />
       
-      <FbxModel src="/assets/models/samba.fbx" @load="onLoad" />
+      <FbxModel src="/src/assets/models/samba.fbx" @load="onLoad" />
 
     </Scene>
   </Renderer>

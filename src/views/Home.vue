@@ -76,7 +76,6 @@ export default {
         height: 40px;
         border: none;
         border-radius: 15px;
-        background-color: var(--dark-grey-color);
         color: #fff;
         margin-right: 20px;
         cursor: pointer;

@@ -1,5 +1,5 @@
 <template>
-    <img src="/assets/images/logo-upwork.png" :height="height" :width="width" alt="Logo de la plateforme upwork">
+    <img src="/src/assets/images/logo-upwork.png" :height="height" :width="width" alt="Logo de la plateforme upwork">
     
 </template>
 

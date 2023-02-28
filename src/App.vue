@@ -3,6 +3,7 @@
     <Navigation @set-current-page="setCurrentPage" :currentPage="currentPage"/>
     <Transition name="views" appear>
       <Home v-if="currentPage === HOME_PAGE" @set-current-page="setCurrentPage"/>
+      <About v-else-if="currentPage === CAREER_PAGE"/>
       <Contact v-else-if="currentPage === CONTACT_PAGE"/>
       <Projects v-else-if="currentPage === PROJECTS_PAGE"/>
     </Transition>
@@ -15,10 +16,11 @@ import Navigation from './components/Navigation.vue';
 import Home from './views/Home.vue';
 import Contact from './views/Contact.vue';
 import Projects from './views/Projects.vue';
+import About from './views/About.vue';
 import { ref } from 'vue';
 
 export default {
-  components: {Navigation, Home, Contact, Projects},
+  components: {Navigation, Home, Contact, Projects, About},
   data() {
     return {
       currentPage: 0,
@@ -41,7 +43,7 @@ export default {
 
 
 <style>
-  @import url('/assets/base.css');
+  @import url('/src/assets/base.css');
 
   main {
     display: flex;

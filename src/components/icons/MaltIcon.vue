@@ -1,5 +1,5 @@
 <template>
-    <img src="/assets/images/logo-malt.jpg" :height="height" :width="width" alt="Logo de la plateforme malt">
+    <img src="/src/assets/images/logo-malt.jpg" :height="height" :width="width" alt="Logo de la plateforme malt">
     
 </template>
 
