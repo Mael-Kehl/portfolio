@@ -3,6 +3,7 @@
         <h1 class="underline">
             ABOUT
         </h1>
+        <h2 id="who-am-i-title">Who am I ?</h2>
         <aside>
             <img src="/src/assets/images/profile-pic.jpg" alt="profile picture">
             <div>
@@ -62,10 +63,14 @@ h1 {
 
 h2 {
     font-size: 25px;
-    margin-bottom: 40px;
+    margin: 0 0 40px 0;
     text-transform: uppercase;
     width: fit-content;
-    border-bottom: 3px solid var(--text-color);
+}
+
+#who-am-i-title {
+    margin: 40px 0 40px 85px;
+
 }
 
 p {
@@ -88,7 +93,7 @@ img {
 }
 
 aside {
-    margin: 80px 0 80px 0;
+    margin: 0px 0 80px 0;
     display: flex;
     justify-content: start;
     align-items: center;

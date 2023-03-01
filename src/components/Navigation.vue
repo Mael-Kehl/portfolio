@@ -1,5 +1,5 @@
 <template>
-    <header>
+    <header @onscroll="handleScroll">
         <div id="home-part">
             <!-- <HomeIcon :width="40" :height="40" @click="$emit('setCurrentPage', 0)"/> -->
             <h1 class="home-logo" @click="$emit('setCurrentPage', 0)">MK</h1>
@@ -25,7 +25,7 @@ export default {
   },
   components: {
     HomeIcon
-  }
+  },
 }
 
 
@@ -41,10 +41,13 @@ export default {
 
 
     header {
+        position: fixed;
         height: 15vh; 
         width: 100vw;
         display: flex;
         font-size: 20px;
+        background-color: var(--background-color);
+        z-index: 10;
     }
 
     #home-part{

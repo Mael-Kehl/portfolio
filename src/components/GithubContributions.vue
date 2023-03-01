@@ -1,11 +1,12 @@
 <template>
-    <section>
+    <article>
         <div class="contribution-title">
             <h2>
                 Contribution history 
             </h2>
             <GithubIcon :height="35" :width="35"/>
         </div>
+        <p>This section is synchronized with my github.</p>
         <aside>
             <div v-for="stat in stats">
                 <div class="contribution-card" v-if="stat.author_association==='CONTRIBUTOR'">
@@ -15,13 +16,13 @@
                     </span>
 
                 <article class="repo-infos-container">
-                    <div class="repo-infos">
-                        <div class="repo-infos-field" v-if="stat.repo != undefined">
-                            <p><a v-if="stat.repo!=undefined" :href="stat.repo.html_url">{{ stat.repo.name }} </a></p> 
+                    <div class="repo-infos" v-if="stat.repo != undefined">
+                        <div class="repo-infos-field" >
+                            <p><a :href="stat.repo.html_url">{{ stat.repo.name }} </a></p> 
                             <RepoIcon :width="20" :height="20"/>                
                         </div>
                         <div class="repo-infos-field">
-                            <p><a v-if="stat.repo!=undefined" :href="stat.repo.owner.html_url">{{ stat.repo.owner.login }}</a></p>
+                            <p><a :href="stat.repo.owner.html_url">{{ stat.repo.owner.login }}</a></p>
                             <AuthorIcon :width="20" :height="20"/>
 
                         </div>
@@ -35,7 +36,7 @@
                 </div>
             </div>
         </aside>
-    </section>
+    </article>
 </template>
 
 <script>
@@ -95,10 +96,13 @@ export default {
 
 <style scoped>
 
+    article {
+        margin-bottom: 20px;
+    }
 
     h2{
         text-transform: uppercase;
-        margin-right: 10px;
+        margin-right: 10px ;
     }
 
     p {
@@ -109,12 +113,13 @@ export default {
     aside { 
         display: flex;
         flex-wrap: wrap;
+        margin-top: 20px;
     }
 
     .contribution-title {
         display: flex;
         align-items: center;
-        margin-bottom: 40px;
+        margin: 40px 0 15px 0;
     }
 
     .contribution-card {
@@ -122,7 +127,7 @@ export default {
         width: 350px;
         height: 200px;
         padding: 10px;
-        border: dashed 3px var(--dark-grey-color);
+        box-shadow: 2px 2px 5px var(--text-color);
         border-radius: 15px;
         margin: 0 25px 0 0;
     }

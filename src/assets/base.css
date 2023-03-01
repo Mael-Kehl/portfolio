@@ -8,6 +8,27 @@
     box-sizing: border-box;
 }
 
+/* Scrollbar styling */
+
+/* Works on Firefox */
+* {
+    scrollbar-width: auto;
+    scrollbar-color: var(--text-color) var(--background-color);
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+    background: var(--background-color);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--text-color);
+}
+
 * {
     --beige-color: #EDD59B;
     --dark-grey-color: #2a2a2a;
@@ -30,6 +51,10 @@ body {
     font-family: 'Inter', sans-serif;
     background-color: var(--background-color);
     color: var(--text-color);
+}
+
+section {
+    margin-top: 15vh;
 }
 
 a {
@@ -60,3 +85,4 @@ h1 {
     /*fix letter spacing with negative value*/
     letter-spacing: -4px;
 }
+  

@@ -2,7 +2,7 @@
     <section>
         <div class="title-container">
             <h1 class="underline"> Contact </h1>
-            <PhoneIcon :width="60" :height="60" />
+            <!-- <PhoneIcon :width="60" :height="60" /> -->
         </div>
         <div class="contact-fields-container">
             <article  class="contact-field">

@@ -31,6 +31,22 @@ export default {
       CONTACT_PAGE: 4,
     }
   },
+  created () {
+    
+    // let apiURL= 'https://ipinfo.io/json?token=a634899926d4ca'
+
+    // const ipinfo = fetch(apiURL)
+    // .then(response => response.json())
+    // .then(data => {
+    //   return data;
+    // });
+
+    
+
+    
+
+
+  },
   methods: {
     setCurrentPage(current) {
       this.currentPage = current;
@@ -46,8 +62,6 @@ export default {
   @import url('/src/assets/base.css');
 
   main {
-    display: flex;
-    flex-direction: column;
     overflow: hidden;
   }
 
