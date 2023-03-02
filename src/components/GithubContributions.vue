@@ -105,6 +105,7 @@ export default {
         margin-right: 10px ;
     }
 
+
     p {
         margin-right: 10px;
         font-weight: 500;
@@ -129,7 +130,7 @@ export default {
         padding: 10px;
         box-shadow: 2px 2px 5px var(--text-color);
         border-radius: 15px;
-        margin: 0 25px 0 0;
+        margin: 0 25px 20px 0;
     }
 
     .contribution-date {
@@ -143,6 +144,25 @@ export default {
         border: solid 2px var(--dark-grey-color);
         font-size: 16px;
         font-weight: 600;
+    }
+
+    
+    @media screen and (max-width: 800px) {
+        h2 {
+            font-size: 18px;
+        }
+        .contribution-card {
+            width: 300px;
+            margin: 0 0 20px 0;
+        }
+
+        aside {
+            flex-wrap: nowrap;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
     }
 
     .repo-infos-container {
@@ -167,5 +187,6 @@ export default {
         margin: 50px 10px 0 10px;
         text-align: justify;
     }
+
     
 </style>

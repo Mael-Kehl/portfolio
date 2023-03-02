@@ -1,6 +1,6 @@
 <template>
     <div class="slider-container">
-        <div id="slider">
+        <div id="slider" @touchmove="touchMove()" @clickmove="touchMove()">
             <div class="project-card" v-for="project in projects" >
                 <img :src="project.image_path" alt="Image describing a project">
                 <h2>{{ project.name }}</h2>
@@ -55,9 +55,11 @@ export default {
         if (this.numberOfSlides % 2 == 0) this.offset = 185;
         else this.offset = 0;
         this.transformPixels = this.offsetPixels;
-
     },      
     methods: {
+        touchMove() {
+            console.log("touch move started")
+        },  
         slidesGoesLeft() {
             //if the currenslide != 0, so not full left
             //We just decrement it and translate a the slider
@@ -71,7 +73,6 @@ export default {
                 let travelDistance = this.numberOfSlides % 2 == 0 ? this.middleSlide-1 : this.middleSlide;
                 this.transformPixels = 370*(travelDistance);
             }
-            console.log(this.currentSlide)
             this.transformValue = `${this.transformPixels+this.offset}px`; 
         },
         slidesGoesRight() {
@@ -86,8 +87,6 @@ export default {
                 this.currentSlide = 0;
                 this.transformPixels = -370*(this.middleSlide);
             }
-            console.log(this.currentSlide)
-            console.log("middle" + this.middleSlide)
             this.transformValue = `${this.transformPixels+this.offset}px`; 
         }
     }
@@ -128,7 +127,7 @@ export default {
 
     .slider-container {
         width: 100%;
-        min-width: 380px;
+        min-width: 300px;
         overflow: hidden;
         padding: 20px 0;
         border: 2px solid var(--text-color);
@@ -154,6 +153,13 @@ export default {
         align-items: center;
         padding: 20px;
         margin: 10px;
+    }
+
+    @media screen and (max-width: 800px) {
+        .slider-container {
+            border: none;
+            padding: 0;
+        }
     }
 
 

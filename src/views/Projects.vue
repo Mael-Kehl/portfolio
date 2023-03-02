@@ -38,4 +38,10 @@ h2{
     padding: 0 170px;
 }
 
+@media screen and (max-width: 800px) {
+    .projects-container {
+        padding: 0 20px;
+    }
+}
+
 </style>

@@ -77,9 +77,14 @@ export default {
     margin: 0;
   }
   canvas {
-    display: block;
     height: 80%;
     width: 50%;
     border: solid 2px red;
+  }
+
+  @media screen and (max-width:800px) {
+    canvas {
+      width: 80%;
+    }
   }
   </style>

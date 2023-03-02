@@ -89,5 +89,42 @@ aside {
 .text {
     margin-left: 30px;
 }
+
+@media screen and (max-width: 800px) {
+
+    h3 {
+        font-size: 16px;
+    }
+
+    h4 {
+        font-size: 13px;
+    }
+
+    p {
+        text-align: justify;
+        width: 100%;
+        font-size: 12px;
+    }
+    .date-circle {
+        width: 80px;
+        height: 80px;
+        font-size: 14px;
+    }
+
+    .linking-line {
+        height: 100px;
+    }
+
+    aside {
+        margin: 0;
+
+    }
+
+    .text {
+        margin-left: 20px;
+    }
+
+
+}
     
 </style>

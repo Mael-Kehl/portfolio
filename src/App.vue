@@ -40,12 +40,6 @@ export default {
     // .then(data => {
     //   return data;
     // });
-
-    
-
-    
-
-
   },
   methods: {
     setCurrentPage(current) {

@@ -40,6 +40,7 @@ export default {
         align-items: center;
         padding: 0 70px;
     }
+    
     .presentation-div{
         width: 50%;
         padding: 0 70px;
@@ -79,6 +80,44 @@ export default {
         color: #fff;
         margin-right: 20px;
         cursor: pointer;
+    }
+
+    @media screen and (max-width: 800px) {
+        section {
+            flex-direction: column-reverse;
+            padding: 0;
+            height: fit-content;
+        }
+
+        .presentation-div {
+            width: 100vw;
+            padding: 40px;
+        }
+
+        h1 {
+            font-size: 55px;
+            margin-bottom: 20px;
+        }
+
+        h4 {
+            margin-bottom: 10px;
+        }
+
+        p{
+            font-size: 20px;
+        }
+
+        .projects-link{
+            margin-top: 30px;
+        }
+
+        #projects-text, button { 
+            font-size: 18px;
+        }
+
+        button {
+            margin-right: 10px;
+        }
     }
 
 

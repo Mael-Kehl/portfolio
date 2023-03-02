@@ -70,7 +70,6 @@ h2 {
 
 #who-am-i-title {
     margin: 40px 0 40px 85px;
-
 }
 
 p {
@@ -97,6 +96,42 @@ aside {
     display: flex;
     justify-content: start;
     align-items: center;
+}
+
+@media screen and (max-width: 800px) {
+    section {
+        padding: 0 20px;
+    }
+
+    #who-am-i-title {
+        margin: 20px 0 20px 0;
+    }
+
+    img {
+        height: 150px;
+        width: 150px;
+        margin: 0 0 20px 0;
+    }
+
+    p {
+        font-size: 16px;
+        width: 100%;
+    }
+    
+    aside {
+        flex-direction: column;
+    }
+
+    .timeline-container {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    article {
+        margin-bottom: 30px;
+    }
+
+
 }
 
 

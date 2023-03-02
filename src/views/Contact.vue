@@ -91,7 +91,12 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
 
+@media screen and (max-width: 800px) {
+     section {
+        padding: 0 40px;
+     }
 }
 
 .title-container {
