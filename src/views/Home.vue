@@ -15,7 +15,8 @@
         </div>
     </div>
     <KeepAlive>
-        <Scene /> 
+        
+        <NewScene />
     </KeepAlive>
   </section>
 </template>
@@ -23,10 +24,11 @@
 
 <script>
 import Scene from '../components/Scene.vue';
+import NewScene from '../components/NewScene.vue';
 
 
 export default {
-    components: {Scene},
+    components: {Scene, NewScene},
     
 }
 </script>
@@ -34,7 +36,7 @@ export default {
 <style scoped>
 
     section {
-        height: 60vh;
+        height: 70vh;
         display: flex;
         justify-content: center;
         align-items: center;

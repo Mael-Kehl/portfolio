@@ -1,15 +1,19 @@
 <template>
-  <Renderer ref="renderer" antialias alpha :orbit-ctrl="{ enableDamping: true, target }" resize shadow>
-    <Camera :position="{ x: 100, y: 200, z: 300 }" />
-    <Scene ref="scene">
-      <HemisphereLight />
+  <Renderer ref="renderer" antialias alpha :orbit-ctrl="{ enableDamping: true, target }" resize>
+    <PerspectiveCamera :aspect="2" :position="{ x: 100, y: 200, z: 300 }" />
+    <Scene ref="scene" >
+      
 
       <DirectionalLight
         :position="{ x: 0, y: 200, z: 100 }"
-        cast-shadow :shadow-camera="{ top: 180, bottom: -120, left: -120, right: 120 }"
+         
       />
+      <AmbientLight color="#ffffff" />
       
-      <FbxModel src="/src/assets/models/samba.fbx" @load="onLoad" />
+      <!-- <FbxModel src="/src/assets/models/samba.fbx" @load="onLoad" /> -->
+      <GltfModel src="src//assets/models/biplan.gltf" 
+      :position="{x: 70, y: 150, z:70}"
+      />
 
     </Scene>
   </Renderer>
@@ -20,9 +24,10 @@
 import { AnimationMixer, Clock, Fog, Vector3 } from 'three';
 import {
   AmbientLight,
-  Camera,
+  PerspectiveCamera,
   DirectionalLight,
   FbxModel,
+  GltfModel,
   HemisphereLight,
   Renderer,
   PhongMaterial,
@@ -32,9 +37,10 @@ import {
 export default {
   components: {
     AmbientLight,
-    Camera,
+    PerspectiveCamera,
     DirectionalLight,
     FbxModel,
+    GltfModel,
     HemisphereLight,
     Renderer,
     PhongMaterial,
@@ -72,19 +78,19 @@ export default {
 };
 </script>
   
-  <style>
+  <style scoped>
   body {
     margin: 0;
   }
   canvas {
-    height: 80%;
-    width: 50%;
+    width: 100%;
+    height: 100%;
     border: solid 2px red;
   }
 
   @media screen and (max-width:800px) {
     canvas {
-      width: 80%;
+      width: 100%;
     }
   }
   </style>
