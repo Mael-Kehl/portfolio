@@ -15,8 +15,7 @@
         </div>
     </div>
     <KeepAlive>
-        
-        <NewScene />
+        <NewScene/>
     </KeepAlive>
   </section>
 </template>
