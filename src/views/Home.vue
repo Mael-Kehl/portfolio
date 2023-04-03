@@ -15,19 +15,18 @@
         </div>
     </div>
     <KeepAlive>
-        <NewScene/>
+        <RocketScene/>
     </KeepAlive>
   </section>
 </template>
 
 
 <script>
-import Scene from '../components/Scene.vue';
-import NewScene from '../components/NewScene.vue';
+import RocketScene from '../components/RocketScene.vue';
 
 
 export default {
-    components: {Scene, NewScene},
+    components: {RocketScene},
     
 }
 </script>
@@ -44,7 +43,7 @@ export default {
     
     .presentation-div{
         width: 50%;
-        padding: 0 70px;
+        padding: 0 0 0 70px;
     }
 
     h1 {
@@ -55,7 +54,7 @@ export default {
 
     h4 {
         font-weight: 500;
-        margin-bottom: 30px;
+        margin-bottom: 0px;
     }
 
     p{
@@ -78,7 +77,8 @@ export default {
         height: 40px;
         border: none;
         border-radius: 15px;
-        color: #fff;
+        color: var(--text-color);
+        background-color: var(--blue-color);
         margin-right: 20px;
         cursor: pointer;
     }

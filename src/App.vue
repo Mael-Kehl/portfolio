@@ -6,6 +6,7 @@
       <About v-else-if="currentPage === ABOUT_PAGE"/>
       <Contact v-else-if="currentPage === CONTACT_PAGE"/>
       <Projects v-else-if="currentPage === PROJECTS_PAGE"/>
+      <Skills v-else-if="currentPage === SKILLS_PAGE" />
     </Transition>
   </main>
 </template>
@@ -17,17 +18,18 @@ import Home from './views/Home.vue';
 import Contact from './views/Contact.vue';
 import Projects from './views/Projects.vue';
 import About from './views/About.vue';
+import Skills from './views/Skills.vue'
 import { ref } from 'vue';
 
 export default {
-  components: {Navigation, Home, Contact, Projects, About},
+  components: {Navigation, Home, Contact, Projects, About, Skills},
   data() {
     return {
       currentPage: 0,
       HOME_PAGE: 0,
       PROJECTS_PAGE: 1,
       ABOUT_PAGE: 2,
-      STUDIES_PAGE: 3,
+      SKILLS_PAGE: 3,
       CONTACT_PAGE: 4,
     }
   },
@@ -57,6 +59,9 @@ export default {
 
   main {
     overflow: hidden;
+    position: relative;
+    min-height: 100vh;
+    width: 100vw;
   }
 
   /* Transition element properties */
@@ -96,8 +101,6 @@ export default {
       transform: translateX(-500px);
     }
   }
-
-
 
 
 </style>

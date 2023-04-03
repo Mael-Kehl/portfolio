@@ -1,6 +1,6 @@
 <template>
     <section class="projects-container">
-        <h1 class="underline">
+        <h1 class="">
             projects
         </h1>
         <h2>
@@ -27,7 +27,6 @@ export default {
 
 
 h1 {
-    text-align: center;
     margin-bottom: 40px;
 }
 h2{

@@ -1,7 +1,7 @@
 <template>
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 46 26" :height="height" :width="width">
         <g clip-path="url(#clip0_4_50)">
-        <path d="M0 13.688H43M43 13.688L32.175 2M43 13.688L32.175 24" stroke="#40474B" stroke-width="3"/>
+        <path d="M0 13.688H43M43 13.688L32.175 2M43 13.688L32.175 24" stroke-width="3"/>
         </g>
         <defs>
         <clipPath id="clip0_4_50">
@@ -27,5 +27,9 @@ export default {
 
 svg {
     cursor: pointer;
+}
+
+path {
+    stroke: var(--blue-color);
 }
 </style>

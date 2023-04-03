@@ -27,8 +27,8 @@ export default {
 <style scoped>
 
 ellipse, path {
-    fill: #2a2a2a;
-    stroke: #2a2a2a;
+    fill: var(--text-color);
+    stroke: var(--text-color);
 }
     
 </style>

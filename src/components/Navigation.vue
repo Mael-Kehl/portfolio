@@ -7,14 +7,14 @@
         <ul class="full-screen-menu">
             <li @click="$emit('setCurrentPage', 1)" :class=" currentPage == 1 ? 'active' : '' ">Projects</li>
             <li @click="$emit('setCurrentPage', 2)" :class=" currentPage == 2 ? 'active' : '' ">About</li>
-            <li @click="$emit('setCurrentPage', 3)" :class=" currentPage == 3 ? 'active' : '' ">Studies</li>
+            <li @click="$emit('setCurrentPage', 3)" :class=" currentPage == 3 ? 'active' : '' ">Skills</li>
             <li @click="$emit('setCurrentPage', 4)" :class=" currentPage == 4 ? 'active' : '' ">Contact</li>
         </ul>
         <Slide width="200" right :closeOnNavigation="true">
             <ul class="phone-menu">
                 <li @click="$emit('setCurrentPage', 1)" :class=" currentPage == 1 ? 'active' : '' ">Projects</li>
                 <li @click="$emit('setCurrentPage', 2)" :class=" currentPage == 2 ? 'active' : '' ">About</li>
-                <li @click="$emit('setCurrentPage', 3)" :class=" currentPage == 3 ? 'active' : '' ">Studies</li>
+                <li @click="$emit('setCurrentPage', 3)" :class=" currentPage == 3 ? 'active' : '' ">Skills</li>
                 <li @click="$emit('setCurrentPage', 4)" :class=" currentPage == 4 ? 'active' : '' ">Contact</li>
             </ul>
         </Slide>
@@ -57,6 +57,7 @@ export default {
         display: flex;
         font-size: 20px;
         background-color: var(--background-color);
+        overflow: hidden;
         z-index: 10;
     }
 
@@ -106,8 +107,7 @@ export default {
     .full-screen-menu > .active {
         border-radius: 15px;
         padding: 10px 15px;
-        background-color: var(--dark-grey-color);
-        color: white;
+        background-color: var(--blue-color);
     }
 
     .phone-menu > .active {

@@ -128,7 +128,7 @@ export default {
         width: 350px;
         height: 200px;
         padding: 10px;
-        box-shadow: 2px 2px 5px var(--text-color);
+        border: 3px solid var(--blue-color);
         border-radius: 15px;
         margin: 0 25px 20px 0;
     }
@@ -140,8 +140,8 @@ export default {
         width: fit-content;
         padding: 10px 15px;
         border-radius: 20px;
-        color: var(--dark-grey-color);
-        border: solid 2px var(--dark-grey-color);
+        color: var(--text-color);
+        border: solid 2px var(--text-color);
         font-size: 16px;
         font-weight: 600;
     }

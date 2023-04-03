@@ -53,22 +53,24 @@ p {
 
 span {
     transform: rotate(-45deg);
+    font-size: 16px;
+    font-weight: 600;
 }
 
 .date-circle {
-    width: 110px;
-    height: 110px;
+    width: 100px;
+    height: 100px;
     display: flex;
     transform: rotate(45deg);
-    border-radius: 10px;
+    border-radius: 5px;
     align-items: center;
     justify-content: center;
-    background-color: var(--text-color);
-    color: var(--background-color);
+    background-color: var(--blue-color);
+    color: var(--text-color);
 }
 
 .linking-line {
-    background-color: var(--text-color);
+    background-color: var(--blue-color);
     width: 8px;
     height: 100px;
 }

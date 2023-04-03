@@ -130,7 +130,7 @@ export default {
         min-width: 300px;
         overflow: hidden;
         padding: 20px 0;
-        border: 2px solid var(--text-color);
+        border: 2px solid var(--blue-color);
         border-radius: 10px;
     }
 
@@ -141,8 +141,8 @@ export default {
         transition: 0.25s all ease-in-out;
     }
     .project-card {
-        box-shadow: 2px 2px 5px var(--text-color);
         border-radius: 15px;
+        border: 3px solid var(--blue-color);
         min-height: 350px;
         min-width: 350px;
         max-width: 350px;

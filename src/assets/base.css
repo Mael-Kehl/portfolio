@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
 
 
 *, *::before, *::after {
@@ -31,9 +33,12 @@
 
 * {
     --beige-color: #EDD59B;
+    --blue-color: #1756df;
+    --white-mute-color: #eeeeee;
+    --white-color: #FFFFFF;
     --dark-grey-color: #2a2a2a;
-    --background-color: var(--beige-color);
-    --text-color: var(--dark-grey-color);
+    --background-color: var(--dark-grey-color);
+    --text-color: var(--white-mute-color);
 }
 
 /* These classes are used to switch from clear to dark mode */
@@ -49,7 +54,10 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    background-color: var(--background-color);
+    /* background: linear-gradient(#4b6cb7, #1b3155);
+    background-repeat: no-repeat;
+    background-attachment: static; */
+    background-color: var(--dark-grey-color);
     color: var(--text-color);
 }
 
@@ -79,10 +87,13 @@ button {
 
 
 h1 {
-    font-family: 'Rampart One', cursive;
+    /* font-family: 'Rampart One', cursive; */
+    /* font-family: 'Titan One', cursive; */
+    font-family: 'Monoton', cursive;
     text-transform: uppercase;
     font-size: 60px;
     /*fix letter spacing with negative value*/
-    letter-spacing: -4px;
+    /* letter-spacing: -4px; */
+    color: var(--blue-color);
 }
   

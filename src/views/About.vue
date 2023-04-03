@@ -1,17 +1,21 @@
 <template>
     <section>
-        <h1 class="underline">
+        <h1 class="">
             ABOUT
         </h1>
         <h2 id="who-am-i-title">Who am I ?</h2>
         <aside>
-            <img src="/src/assets/images/profile-pic.jpg" alt="profile picture">
+            <div class="img-container">
+                <img src="/src/assets/images/profile-pic.jpg" alt="profile picture">
+                <div id="offset-outline"></div>
+            </div>
             <div>
                 <p>
-                Hey, I'm Maël, a French passionate developper and apprentice engineer born in the Montains of the Vosges. 
-                After a two year computer science degree, I'm preparing a dual studies <strong>engineer</strong> diploma while proposing freelance services.
-                Otherwise, I love cinema, playing sport and hanging out with friends. 
-            </p>
+                    Hey, I'm Maël, a French <strong>passionate developper</strong> and <strong>apprentice engineer</strong> born in the <strong>Vosges</strong> Mountains. 
+                    After a two year computer science degree, I'm preparing a dual studies engineer diploma while proposing <strong>freelance services</strong>.
+                    Otherwise, I love cinema, playing sports and hanging out with friends. 
+                </p>
+                
             </div>
         </aside>
         <div class="timeline-container">
@@ -58,7 +62,7 @@ section {
 }
 
 h1 {
-    text-align: center;
+    margin-bottom: 40px;
 }
 
 h2 {
@@ -69,7 +73,8 @@ h2 {
 }
 
 #who-am-i-title {
-    margin: 40px 0 40px 85px;
+    /* margin: 40px 0 40px 85px; */
+    display: none;
 }
 
 p {
@@ -78,13 +83,29 @@ p {
     font-size: 18px;
 }
 
+.img-container {
+    position: relative;
+}
+
 img {
-    height: 350px;
-    width: 350px;
-    border-radius: 50%;
+    height: 220px;
+    width: 220px;
     margin-right: 100px;
 }
 
+strong {
+    color: var(--blue-color);
+}
+
+#offset-outline {
+    position: absolute;
+    top: 50px;
+    left: -50px;
+    border: 10px solid var(--blue-color);
+    height: 220px;
+    width: 220px;
+    z-index: -20;
+}
 
 .timeline-container {
     display: flex;
@@ -94,7 +115,7 @@ img {
 aside {
     margin: 0px 0 80px 0;
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
 }
 
