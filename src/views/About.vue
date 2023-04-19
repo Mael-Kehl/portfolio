@@ -6,7 +6,7 @@
         <h2 id="who-am-i-title">Who am I ?</h2>
         <aside>
             <div class="img-container">
-                <img src="/src/assets/images/profile-pic.jpg" alt="profile picture">
+                <img src="/assets/images/profile-pic.jpg" alt="profile picture">
                 <div id="offset-outline"></div>
             </div>
             <div>
@@ -37,8 +37,8 @@
 
 <script>
 
-import studiesData from "../assets/models/studies.json";
-import experiencesData from "../assets/models/experiences.json";
+import studiesData from "../assets/studies.json";
+import experiencesData from "../assets/experiences.json";
 
 import TimeLine from "../components/TimeLine.vue";
 

@@ -1,5 +1,5 @@
 <template>
-    <img src="/src/assets/images/logo-thingiverse.png" :height="height" :width="width" alt="Logo de la plateforme thingiverse">
+    <img src="/assets/images/logo-thingiverse.png" :height="height" :width="width" alt="Logo de la plateforme thingiverse">
  
  </template>
  
