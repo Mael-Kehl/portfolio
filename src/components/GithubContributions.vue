@@ -8,7 +8,7 @@
         </div>
         <p>This section is synchronized with my github.</p>
         <aside>
-            <div v-for="stat in stats">
+            <div v-for="stat in stats" :key="stat.repo">
                 <div class="contribution-card" v-if="stat.author_association==='CONTRIBUTOR'">
 
                     <span class="contribution-date">  

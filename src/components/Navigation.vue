@@ -151,7 +151,7 @@ export default {
       cursor: pointer;
     }
     .bm-cross {
-      background: var(--background-color);
+      background: var(--blue-color);
     }
     .bm-cross-button {
       height: 24px;
@@ -175,7 +175,7 @@ export default {
     }
 
     .bm-item-list {
-      color: var(--background-color);
+      color: var(--text-color);
       margin-left: 10%;
       font-size: 20px;
     }

@@ -1,22 +1,24 @@
 <template >
 <section>
     <div class="presentation-div">
-        <h4>
-            Hello, my name is
-        </h4>
-        <h1>MAËL KEHL</h1>
-        <p>Creative Developper, </p>
-        <p>Apprentice Engineer</p>
-        <div class="projects-link">
-            <button id="projects-button" @click="$emit('setCurrentPage', 1)">
-                Fly
-            </button>
-            <p id="projects-text">Through my projects</p>
+        <div class="presentation-div-text-container">
+            <h4>
+                Hello, my name is
+            </h4>
+            <h1>MAËL KEHL</h1>
+            <p>Creative Developper, </p>
+            <p>Apprentice Engineer</p>
+            <div class="projects-link">
+                <button id="projects-button" @click="$emit('setCurrentPage', 1)">
+                    Fly
+                </button>
+                <p id="projects-text">Through my projects</p>
+            </div>
         </div>
     </div>
-    <KeepAlive>
-        <RocketScene/>
-    </KeepAlive>
+    
+    <RocketScene/>
+    
   </section>
 </template>
 
@@ -42,8 +44,11 @@ export default {
     }
     
     .presentation-div{
-        width: 50%;
-        padding: 0 0 0 70px;
+        min-width: 50%;
+        /* padding: 0 0 0 200px; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     h1 {

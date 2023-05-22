@@ -52,7 +52,7 @@ export default {
             rocket.scene.scale.set(1,1,1);
             this.rocketobject = rocket;
             this.rocketobject.scene.position.y = 0;
-            this.rocketobject.scene.position.x = -1;
+            this.rocketobject.scene.position.x = -0.5;
             this.rocketobject.scene.position.z = -1;
             this.rocketobject.scene.rotation.z = -30*(Math.PI/180);
             this.scene.add(rocket.scene);
@@ -65,8 +65,8 @@ export default {
             alpha: true
         });
 
-        this.controls = new OrbitControls( this.camera, this.renderer.domElement );
-        this.controls.update();
+        // this.controls = new OrbitControls( this.camera, this.renderer.domElement );
+        // this.controls.update();
 
         this.renderer.setSize(container.clientWidth, container.clientHeight);
         container.appendChild(this.renderer.domElement);
@@ -78,8 +78,14 @@ export default {
         if (this.rocketobject)
             this.rocketobject.scene.children[0].rotation.z += 0.1;
 
-        this.controls.update();
+        // this.controls.update();
         this.renderer.render(this.scene, this.camera);
+    },
+    onresize: function() {
+        const w = this.container.clientWidth;
+        const h = this.container.clientHeight;
+        this.camera.aspect = w / h; 
+        this.camera.updateProjectionMatrix();
     }
   },
   mounted() {
@@ -92,7 +98,14 @@ export default {
 <style scoped>
     #container {
         height: 100%;
-        width: 100%;
+        max-width: 100%;
+        min-width: 50%;
         /* border: 2px solid red; */
+    }
+
+    @media screen and (max-width: 800px) {
+        #container {
+            min-height: 250px;
+        }
     }
 </style>
