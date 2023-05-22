@@ -1,5 +1,5 @@
 <template>
-<img src="/src/assets/images/telephone.png" :height="height" :width="width" alt="">
+<img src="/assets/images/telephone.png" :height="height" :width="width" alt="">
 
 </template>
 

@@ -27,7 +27,7 @@
 </template>
 
 <script>
-import projectsData from '/src/assets/models/projects.json';
+import projectsData from '/src/assets/projects.json';
 import LeftArrowIcon from '../components/icons/LeftArrowIcon.vue';
 import RightArrowIcon from '../components/icons/RightArrowIcon.vue';
 import GithubIcon from '../components/icons/GithubIcon.vue'

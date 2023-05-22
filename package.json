@@ -1,7 +1,11 @@
 {
-  "name": "troisjs-app",
+  "name": "mael-kehl-portfolio",
   "version": "0.0.0",
+  "homepage": "https://Mael-Kehl.github.io/",
+  "repository": "#",
+  "license": "UNLICENSED",
   "scripts": {
+    "deploy": "gh-pages -d build",
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview"
@@ -15,6 +19,7 @@
   "devDependencies": {
     "@vitejs/plugin-vue": "^1.9.4",
     "@vue/compiler-sfc": "^3.2.20",
+    "gh-pages": "^5.0.0",
     "vite": "^2.9.15"
   }
 }

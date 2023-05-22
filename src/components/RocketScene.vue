@@ -48,7 +48,7 @@ export default {
         this.cube.position.set(0,0,0);
         // this.scene.add(this.cube);
 
-        this.gltfloader.load('/src/assets/models/rocket.gltf', (rocket) => {
+        this.gltfloader.load('/assets/models/rocket.gltf', (rocket) => {
             rocket.scene.scale.set(1,1,1);
             this.rocketobject = rocket;
             this.rocketobject.scene.position.y = 0;

@@ -1,0 +1,35 @@
+[
+    {
+        "name": "Polytech Nancy",
+        "location": "Nancy",
+        "title": "Engineer degree",
+        "mention": "",
+        "begin": "2022",
+        "end": "2025",
+        "isFinished": false,
+        "isFirst": false,
+        "description" : "Dual studies engineer degree in computer science, automation, network and robotics that allows me to push further my skills in a work environment while learning new things at name."
+    },
+    {
+        "name": "IUT de Saint-Dié-Des-Vosges",
+        "location": "Saint-Dié-Des-Vosges",
+        "title": "Two year university degree",
+        "mention": "",
+        "isFinished": true,
+        "isFirst": false,
+        "begin": "2020",
+        "end": "2022",
+        "description" : "Two-year university degree in computer science technology, where I learned and practiced the art of programming but also project management methods."
+    },
+    {
+        "name": "Lycée Jean-Lurçat",
+        "location": "Bruyères",
+        "title" : "Bachelor's degree",
+        "mention": "Bien",
+        "isFinished": true,
+        "isFirst": true,
+        "begin": "2017",
+        "end": "2020",
+        "description" : "Bachelor's degree in Science, with speciality Life and Earth sciences, and option european section english."
+    }
+]

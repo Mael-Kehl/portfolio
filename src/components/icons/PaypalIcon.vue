@@ -1,5 +1,5 @@
 <template>
-    <img src="/src/assets/images/logo-paypal.png" :height="height" :width="width" alt="Logo de la plateforme paypal">
+    <img src="/assets/images/logo-paypal.png" :height="height" :width="width" alt="Logo de la plateforme paypal">
  
  </template>
  
