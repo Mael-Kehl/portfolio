@@ -4,9 +4,9 @@
         "location": "Nancy",
         "title": "Engineer degree",
         "mention": "",
-        "begin": "2022",
+        "begin": "2022-2025",
         "end": "2025",
-        "isFinished": false,
+        "isFinished": true,
         "isFirst": false,
         "description" : "Dual studies engineer degree in computer science, automation, network and robotics that allows me to push further my skills in a work environment while learning new things at name."
     },

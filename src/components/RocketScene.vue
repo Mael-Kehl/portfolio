@@ -6,6 +6,7 @@
 import * as Three from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import {GLTFLoader} from 'three/examples/jsm/loaders/GLTFLoader';
+// import rocketObject from '../../public/assets/models/rocket.gltf';
 
 export default {
   data() {
@@ -48,7 +49,7 @@ export default {
         this.cube.position.set(0,0,0);
         // this.scene.add(this.cube);
 
-        this.gltfloader.load('/assets/models/rocket.gltf', (rocket) => {
+        this.gltfloader.load('assets/models/rocket.gltf', (rocket) => {
             rocket.scene.scale.set(1,1,1);
             this.rocketobject = rocket;
             this.rocketobject.scene.position.y = 0;

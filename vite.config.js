@@ -8,7 +8,7 @@ export default defineConfig({
   base: '',
   build: {
     outDir: './build',
-    chunkSizeWarningLimit: 5000,
+    chunkSizeWarningLimit: 10000,
   },
   // rollupOptions: {
   //   rocket: resolve(__dirname, './src/assets/models/rocket.gltf'),

@@ -1,5 +1,5 @@
 <template>
-    <div class="container" v-for="place in this.places">
+    <div class="container" v-for="place in this.places" :key="place.title">
         <aside>
             <div v-if="place.isFinished" class="date-circle">
                 <span>{{ place.begin }}-{{ place.end }}</span>

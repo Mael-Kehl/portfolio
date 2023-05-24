@@ -6,7 +6,7 @@
         "isFinished": true,
         "description" : "Simple web app done with HTML, CSS and JavaScript that fetches OpenWeatherMap API to get the weather of the week.",
         "techno_used" : ["HTML", "CSS", "JavaScript"],
-        "image_path": "/assets/images/weather-app.png",
+        "image_path": "assets/images/weather-app.png",
         "link": "https://github.com/Mael-Kehl/weather-app"
     },
     {
@@ -16,7 +16,7 @@
         "isFinished": true,
         "description" : "You are currently navigating on this project that acts like a Curriculum Vitae.",
         "techno_used" : ["Three.js", "Vue.js"],
-        "image_path": "/assets/images/portfolio.png",
+        "image_path": "assets/images/portfolio.png",
         "link": "https://github.com/Mael-Kehl/portfolio"
     },
     {
@@ -26,7 +26,7 @@
         "isFinished": true,
         "description" : "Visualizing a robotic arm in real time in a browser using arduino sensors, REST API and Three.js library.",
         "techno_used" : ["Three.js", "Express.js", "Arduino"],
-        "image_path": "/assets/images/robotic-arm.png",
+        "image_path": "assets/images/robotic-arm.png",
         "link": "https://github.com/PT3-Robotic-arm"
     },
     {
@@ -36,7 +36,7 @@
         "isFinished": true,
         "description" : "Frontend design picked on dribbble.com recreated with HTML, CSS and JavaScript.",
         "techno_used" : ["HTML", "CSS", "JavaScript"],
-        "image_path": "/assets/images/wallet-model.png",
+        "image_path": "assets/images/wallet-model.png",
         "link": "https://github.com/Mael-Kehl/wallet-model"
     }
 

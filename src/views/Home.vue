@@ -6,7 +6,7 @@
                 Hello, my name is
             </h4>
             <h1>MAËL KEHL</h1>
-            <p>Creative Developper, </p>
+            <p>Freelance Developper, </p>
             <p>Apprentice Engineer</p>
             <div class="projects-link">
                 <button id="projects-button" @click="$emit('setCurrentPage', 1)">
