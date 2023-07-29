@@ -5,16 +5,16 @@
             <h1 class="home-logo" @click="$emit('setCurrentPage', 0)">MK</h1>
         </div>
         <ul class="full-screen-menu">
-            <li @click="$emit('setCurrentPage', 1)" :class=" currentPage == 1 ? 'active' : '' ">Projects</li>
-            <li @click="$emit('setCurrentPage', 2)" :class=" currentPage == 2 ? 'active' : '' ">About</li>
-            <li @click="$emit('setCurrentPage', 3)" :class=" currentPage == 3 ? 'active' : '' ">Skills</li>
+            <!-- <li @click="$emit('setCurrentPage', 1)" :class=" currentPage == 1 ? 'active' : '' ">Projects</li> -->
+            <li @click="$emit('setCurrentPage', 2)" :class=" currentPage == 2 ? 'active' : '' ">À propos</li>
+            <!-- <li @click="$emit('setCurrentPage', 3)" :class=" currentPage == 3 ? 'active' : '' ">Skills</li> -->
             <li @click="$emit('setCurrentPage', 4)" :class=" currentPage == 4 ? 'active' : '' ">Contact</li>
         </ul>
         <Slide width="200" right :closeOnNavigation="true">
             <ul class="phone-menu">
-                <li @click="$emit('setCurrentPage', 1)" :class=" currentPage == 1 ? 'active' : '' ">Projects</li>
-                <li @click="$emit('setCurrentPage', 2)" :class=" currentPage == 2 ? 'active' : '' ">About</li>
-                <li @click="$emit('setCurrentPage', 3)" :class=" currentPage == 3 ? 'active' : '' ">Skills</li>
+                <!-- <li @click="$emit('setCurrentPage', 1)" :class=" currentPage == 1 ? 'active' : '' ">Projects</li> -->
+                <li @click="$emit('setCurrentPage', 2)" :class=" currentPage == 2 ? 'active' : '' ">À propos</li>
+                <!-- <li @click="$emit('setCurrentPage', 3)" :class=" currentPage == 3 ? 'active' : '' ">Skills</li> -->
                 <li @click="$emit('setCurrentPage', 4)" :class=" currentPage == 4 ? 'active' : '' ">Contact</li>
             </ul>
         </Slide>
@@ -82,6 +82,7 @@ export default {
         padding: 0 100px;
     }
 
+
     .phone-menu {
         display: flex;
         flex-direction: column;
@@ -104,11 +105,19 @@ export default {
         font-size: 25px;
     }
 
-    .full-screen-menu > .active {
-        border-radius: 15px;
-        padding: 10px 15px;
-        background-color: var(--blue-color);
+    .full-screen-menu > li {
+      border-bottom: 4px solid var(--background-color);
+      transition: 0.4s ease;
     }
+
+    .full-screen-menu > li:hover{
+      border-bottom-color: var(--blue-color);
+    }
+
+    .full-screen-menu > .active {
+        border-bottom: 4px solid var(--blue-color);
+    }
+
 
     .phone-menu > .active {
         color: white;
@@ -134,7 +143,7 @@ export default {
     }
 
     .bm-burger-bars {
-      background-color: var(--text-color);
+      background-color: var(--dark-grey-color);
     }
 
     .line-style {

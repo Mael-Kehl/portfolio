@@ -66,7 +66,7 @@ span {
     align-items: center;
     justify-content: center;
     background-color: var(--blue-color);
-    color: var(--text-color);
+    color: var(--background-color);
 }
 
 .linking-line {

@@ -34,11 +34,11 @@
 * {
     --beige-color: #EDD59B;
     --blue-color: #1756df;
-    --white-mute-color: #eeeeee;
+    --white-mute-color: #f0f0f0;
     --white-color: #FFFFFF;
     --dark-grey-color: #2a2a2a;
-    --background-color: var(--dark-grey-color);
-    --text-color: var(--white-mute-color);
+    --background-color: var(--white-mute-color);
+    --text-color: var(--dark-grey-color);
 }
 
 /* These classes are used to switch from clear to dark mode */
@@ -48,8 +48,8 @@
 }
 
 .dark-mode {
-    --background-color: var(--dark-grey-color);
-    --text-color: var(--beige-color);
+    --background-color: var(--white-color);
+    --text-color: var(--dark-grey-color);
 }
 
 body {
@@ -57,7 +57,7 @@ body {
     /* background: linear-gradient(#4b6cb7, #1b3155);
     background-repeat: no-repeat;
     background-attachment: static; */
-    background-color: var(--dark-grey-color);
+    background-color: var(--background-color);
     color: var(--text-color);
 }
 
@@ -68,6 +68,10 @@ section {
 a {
     text-decoration: underline;
     color: var(--text-color);
+}
+
+strong {
+    color: var(--blue-color);
 }
 
 button {

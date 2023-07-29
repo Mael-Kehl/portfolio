@@ -7,25 +7,24 @@
         </div>
         <aside>
             <div class="contact-fields-container">
-                <article  class="contact-field">
-                    <GithubIcon :width="30" :height="30"/>
-                    <a href="https://github.com/Mael-Kehl">
-                        github.com/Mael-Kehl
-                    </a>
-                </article>
+                <h2>Comment faire appel à moi ?</h2>
+                <p id="freelance-contact-text">
+                    Actuellement <strong>auto-entrepreneur</strong>, vous pouvez me faire part de votre <strong>projet</strong> par <strong>Mail</strong> ou via <strong>Malt</strong>. 
+                    Je suis spécialisé dans le développement de <strong>solutions web</strong> pour les entreprises, allant d'un <strong>site vitrine</strong> à une infrastracture complète de <strong>e-boutique</strong>. 
+                    <br><br>N° de <strong>SIRET</strong> : 95275322600010
+                </p>
                 <article  class="contact-field">
                     <ProtonIcon :width="30" :height="30"/>
                     <a href="mailto:mael-kehl@protonmail.com">
                         mael-kehl@protonmail.com
                     </a>
                 </article>
-                <article  class="contact-field">
+                <!-- <article  class="contact-field">
                     <SmartPhoneIcon :width="30" :height="30"/>
                     <a href="tel:+33783234775">
                         +33 7 83 23 47 75
                     </a>
-                </article>
-                <h2>Hire me</h2>
+                </article> -->
                 <article  class="contact-field">
                     <MaltIcon :width="30" :height="30"/>
                     <a href="https://www.malt.fr/profile/maelkehl">
@@ -39,12 +38,21 @@
                     </a>
                 </article>
                 <article  class="contact-field">
+                    <GithubIcon :width="30" :height="30"/>
+                    <a href="https://github.com/Mael-Kehl">
+                        github.com/Mael-Kehl
+                    </a>
+                </article>
+                <article  class="contact-field">
                     <LinkedinIcon :width="30" :height="30"/>
                     <a href="https://www.linkedin.com/in/ma%C3%ABl-kehl-a15970225/">
                         linkedin.com/mael-Kehl
                     </a>
                 </article>
-                <h2>See my products</h2>
+               
+            </div>
+            <div class="contact-fiels-container">
+                <h2>Impression 3D</h2>
                 
                 <article  class="contact-field">
                     <EtsyIcon :width="30" :height="30"/>
@@ -58,9 +66,7 @@
                         thingiverse.com/dashvolt/designs
                     </a>
                 </article>
-            </div>
-            <div class="contact-fiels-container">
-                <h2>Support me</h2>
+                <h2>Un petit tip ? </h2>
                 <article  class="contact-field">
                     <PaypalIcon :width="30" :height="30"/>
                     <a href="https://www.paypal.me/maelkehl">
@@ -135,6 +141,13 @@ aside {
     justify-content: center;
     align-items: center;
     width: fit-content;
+    margin-bottom: 20px;
+}
+
+#freelance-contact-text {
+    width: 600px;
+    text-align: justify;
+    font-size: 18px;
     margin-bottom: 20px;
 }
 

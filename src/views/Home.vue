@@ -3,16 +3,16 @@
     <div class="presentation-div">
         <div class="presentation-div-text-container">
             <h4>
-                Hello, my name is
+                Hey, je m'appelle
             </h4>
             <h1>MAËL KEHL</h1>
-            <p>Freelance Developper, </p>
-            <p>Apprentice Engineer</p>
+            <p>Développeur Freelance </p>
+            <p>& Apprenti Ingénieur</p>
             <div class="projects-link">
-                <button id="projects-button" @click="$emit('setCurrentPage', 1)">
-                    Fly
-                </button>
-                <p id="projects-text">Through my projects</p>
+                <p id="projects-button" @click="$emit('setCurrentPage', 2)">
+                    Check 
+                </p>
+                <p id="projects-text"> mon profil</p>
             </div>
         </div>
     </div>
@@ -73,19 +73,18 @@ export default {
         align-items: center;
     }
 
-    #projects-text, button { 
+    #projects-text { 
         font-size: 20px;
+        border-bottom: 4px solid var(--background-color);
     }
 
-    button {
-        width: 80px;
-        height: 40px;
-        border: none;
-        border-radius: 15px;
+    #projects-button {
+        border-bottom: 4px solid var(--blue-color);
         color: var(--text-color);
-        background-color: var(--blue-color);
-        margin-right: 20px;
+        background-color: var(--background-color);
         cursor: pointer;
+        font-size: 20px;
+        margin-right: 5px;
     }
 
     @media screen and (max-width: 800px) {

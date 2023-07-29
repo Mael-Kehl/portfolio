@@ -6,14 +6,16 @@
         <h2 id="who-am-i-title">Who am I ?</h2>
         <aside>
             <div class="img-container">
-                <img src="/assets/images/profile-pic.jpg" alt="profile picture">
+                <img src="/assets/images/profile-pic.png" alt="profile picture">
                 <div id="offset-outline"></div>
             </div>
             <div>
                 <p>
-                    Hey, I'm Maël, a French <strong>passionate developper</strong> and <strong>apprentice engineer</strong> born in the <strong>Vosges</strong> Mountains. 
+                    Originaire des montagnes <strong>Vosgiennes</strong>, je suis un <strong>développeur</strong> passioné en quète de missions <strong>freelance</strong>
+                    qui prépare un diplôme <strong>d'ingénieur</strong> par apprentissage chez <strong>Atos</strong> et <strong>Polytech Nancy</strong>.
+                    <!-- Hey, I'm Maël, a French <strong>passionate developper</strong> and <strong>apprentice engineer</strong> born in the <strong>Vosges</strong> Mountains. 
                     After a two year computer science degree, I'm preparing a dual studies engineer diploma while proposing <strong>freelance services</strong>.
-                    Otherwise, I love cinema, playing sports and hanging out with friends. 
+                    Otherwise, I love cinema, playing sports and hanging out with friends.  -->
                 </p>
                 
             </div>
@@ -21,17 +23,18 @@
         <div class="timeline-container">
             <article>
                 <h2>
-                    Studies
+                    Études
                 </h2>
                 <TimeLine :places="studies"/>
             </article>
             <article>
                 <h2>
-                    experiences
+                    Expériences
                 </h2>
                 <TimeLine :places="experiences"/>
             </article>
         </div>
+    <Skills />
     </section>
 </template>
 
@@ -39,7 +42,7 @@
 
 import studiesData from "../assets/studies.json";
 import experiencesData from "../assets/experiences.json";
-
+import Skills from "./Skills.vue";
 import TimeLine from "../components/TimeLine.vue";
 
 export default {
@@ -49,7 +52,7 @@ export default {
             experiences: experiencesData
         }
     },
-    components: {TimeLine}
+    components: {TimeLine, Skills}
 }
 
 </script>
@@ -93,10 +96,6 @@ img {
     margin-right: 100px;
 }
 
-strong {
-    color: var(--blue-color);
-}
-
 #offset-outline {
     position: absolute;
     top: 50px;
@@ -110,6 +109,8 @@ strong {
 .timeline-container {
     display: flex;
     justify-content: space-around;
+    margin-bottom: 50px;
+    
 }
 
 aside {
