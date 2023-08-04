@@ -53,7 +53,7 @@ export default {
 
     h1 {
         font-size: 75px;
-        font-weight: bolder;
+        font-weight: 600;
         margin-bottom: 30px;
     }
 
