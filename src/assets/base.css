@@ -47,11 +47,6 @@
     --text-color: var(--dark-grey-color);
 }
 
-.dark-mode {
-    --background-color: var(--white-color);
-    --text-color: var(--dark-grey-color);
-}
-
 body {
     font-family: 'Inter', sans-serif;
     /* background: linear-gradient(#4b6cb7, #1b3155);
@@ -106,4 +101,77 @@ h1 {
         font-size: 40px;
     }
 }
+
+
+.bm-burger-button {
+    position: absolute;
+    width: 36px;
+    height: 30px;
+    top: 50px;
+    left: 80vw;
+    cursor: pointer;
+  }
+  
+  @media screen and (min-width: 800px) {
+      .bm-burger-button {
+          display: none;
+      }
+  }
+  
+  .bm-burger-bars {
+    background-color: var(--blue-color);
+  }
+  
+  .line-style {
+    position: absolute;
+    height: 20%;
+    left: 0;
+    right: 0;
+  }
+  
+  .cross-style {
+    position: absolute;
+    top: 12px;
+    right: 2px;
+    cursor: pointer;
+  }
+  .bm-cross {
+    background: var(--blue-color);
+  }
+  .bm-cross-button {
+    height: 24px;
+    width: 24px;
+  }
+  .bm-menu {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: absolute; /* Stay in place */
+    z-index: 1000; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: var(--background-color); 
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /*0.5 second transition effect to slide in the sidenav*/
+  }
+  
+  .bm-overlay {
+      background-color: var(--background-color);
+  }
+  
+  .bm-item-list {
+    color: var(--text-color);
+    margin-left: 10%;
+    font-size: 20px;
+  }
+  .bm-item-list > * {
+    display: flex;
+    text-decoration: none;
+  }
+  
+  .bm-item-list > * > span {
+    margin-left: 10px;
+    font-weight: 700;
+    color: white;
+  }
   
