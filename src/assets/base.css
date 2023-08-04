@@ -100,4 +100,10 @@ h1 {
     /* letter-spacing: -4px; */
     color: var(--blue-color);
 }
+
+@media screen  and (max-width: 800px) {
+    h1 {
+        font-size: 40px;
+    }
+}
   

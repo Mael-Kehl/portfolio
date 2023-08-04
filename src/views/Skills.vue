@@ -12,7 +12,7 @@
                     </div>
                 </div>
             </div> -->
-            <div>
+            <div class="technical-skills">
                 <span>
                     <img src="/assets/images/logo-java.png" alt="Java icon">
                     <p>Java</p>
@@ -42,7 +42,7 @@
         <div class="soft-skills">
             <h2>Points forts</h2>
 
-            <p id="soft-skills-text">Habitué à me voir confier diverses missions, je sais travailler en <strong>autonomie</strong>
+            <p id="soft-skills-text">Fort des diverses missions que l'on m'a confié, je sais travailler en <strong>autonomie</strong>
             avec <strong>rigueur</strong>. Je suis <strong>motivé</strong> et je n'hésite pas à faire preuve
             <strong>d'initiative</strong> et à donner le <strong>meilleur</strong> de moi même pour mener à bien un projet.</p>
         </div>
@@ -90,78 +90,45 @@ span > img {
 
 
 p {
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
+h2 {
+    width: 100%;
+}
+.technical-skills{
+    width: 30vw;
+}
 .soft-skills {
-    margin-left: 300px;
+    width: 30vw;
 }
 
 #soft-skills-text {
     margin-top: 30px;
-    width: 500px;
+    width: 100%;
     text-align: justify;
 }
 
-.graph-view-container {
-    border:solid red 2px;
-    height: 60vh;
-    width: 80vw;
-    padding: 50px;
-}
-.graph-view {
-    position: relative;
-    min-width: 100%;
-    min-height: 100%;
-    border: 2px solid cyan;
+@media screen and (max-width: 800px) {
+    
+    article {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .technical-skills {
+        width: 100%;
+    }
+    .soft-skills {
+        margin: 0;
+        width: 100%;
+    }
+
+    #soft-skills-text {
+        width: 100%;
+    }
 }
 
-.node {
-    display: flex; justify-content: center; align-items: center;
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    background-color: var(--blue-color);
-    color: var(--text-color);
-}
-
-#vue-js-node {
-    position: absolute;
-    top: 50px;
-    left: 50px;
-    animation: move-vue-node 10s ease-in-out infinite, scale 3s ease infinite;
-}
-
-#three-js-node {
-    position: absolute;
-    top: 400px;
-    left: 300px;
-    animation: move-three-node 10s ease-in-out infinite,scale 3s ease infinite;
-
-}
-
-/* Responsive animation for vue.js skill node */
-@keyframes move-vue-node {
-    0% { top: calc(0.1 * 100%); left: calc(0.1 * 100%); }
-    25% { top: calc(0.1 * 100% + 50px); left: calc(0.1 * 100% + 50px); }
-    50% { top: calc(0.1 * 100% - 20px); left: calc(0.1 * 100% + 130px); }
-    75% { top: calc(0.1 * 100% + 70px); left: calc(0.1 * 100% - 30px); }
-    100% { top: calc(0.1 * 100%); left: calc(0.1 * 100%); }
-}
-
-/* Responsive animation for three.js skill node */
-@keyframes move-three-node {
-    0% { top: calc(0.5 * 100%); left: calc(0.6 * 100%); }
-    25% { top: calc(0.5 * 100% - 80px); left: calc(0.6 * 100% + 40px); }
-    50% { top: calc(0.5 * 100%); left: calc(0.6 * 100%); }
-    75% { top: calc(0.5 * 100% - 120px); left: calc(0.6 * 100% + 30px); }
-    100% { top: calc(0.5 * 100%); left: calc(0.6 * 100%); }
-}
-
-@keyframes scale {
-    0%{ width: 70px; height: 70px; }
-    50%{ width: 80px; height: 80px; }
-    100%{ width: 70px; height: 70px; }
-}
 
 </style>

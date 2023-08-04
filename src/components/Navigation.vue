@@ -90,7 +90,7 @@ export default {
 
     .phone-menu > li {
         margin-bottom: 15px;
-        font-size: 18px;
+        font-size: 1.2rem;
     }
 
     @media screen and (max-width: 800px) {
@@ -102,7 +102,7 @@ export default {
     li {
         cursor: pointer;
         transition: all 0.1s ease-in-out;
-        font-size: 25px;
+        font-size: 1.25em;
     }
 
     .full-screen-menu > li {
@@ -120,7 +120,8 @@ export default {
 
 
     .phone-menu > .active {
-        color: white;
+        color: var(--blue-color);
+        font-weight: bold;
     }
 </style>
 
@@ -128,7 +129,7 @@ export default {
 /* Style rules about the burger menu */
 
     .bm-burger-button {
-      position: fixed;
+      position: absolute;
       width: 36px;
       height: 30px;
       top: 50px;
@@ -143,7 +144,7 @@ export default {
     }
 
     .bm-burger-bars {
-      background-color: var(--dark-grey-color);
+      background-color: var(--blue-color);
     }
 
     .line-style {
@@ -173,7 +174,7 @@ export default {
       z-index: 1000; /* Stay on top */
       top: 0;
       left: 0;
-      background-color: rgb(63, 63, 65); /* Black*/
+      background-color: var(--background-color); /* Black*/
       overflow-x: hidden; /* Disable horizontal scroll */
       padding-top: 60px; /* Place content 60px from the top */
       transition: 0.5s; /*0.5 second transition effect to slide in the sidenav*/

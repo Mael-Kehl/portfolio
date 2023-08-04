@@ -3,7 +3,6 @@
         <h1 class="">
             ABOUT
         </h1>
-        <h2 id="who-am-i-title">Who am I ?</h2>
         <aside>
             <div class="img-container">
                 <img src="/assets/images/profile-pic.png" alt="profile picture">
@@ -75,10 +74,6 @@ h2 {
     width: fit-content;
 }
 
-#who-am-i-title {
-    /* margin: 40px 0 40px 85px; */
-    display: none;
-}
 
 p {
     width: 500px;
@@ -125,23 +120,33 @@ aside {
         padding: 0 20px;
     }
 
-    #who-am-i-title {
-        margin: 20px 0 20px 0;
-    }
-
     img {
-        height: 150px;
-        width: 150px;
+        height: 200px;
+        width: 200px;
         margin: 0 0 20px 0;
     }
 
     p {
-        font-size: 16px;
+        font-size: 1.25em;
         width: 100%;
     }
     
     aside {
         flex-direction: column;
+    }
+
+    #offset-outline {
+        position: absolute;
+        top: 40px;
+        left: -40px;
+        border: 8px solid var(--blue-color);
+        height: 200px;
+        width: 200px;
+        z-index: -20;
+    }
+
+    .img-container {
+        margin-bottom: 40px;
     }
 
     .timeline-container {

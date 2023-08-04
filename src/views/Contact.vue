@@ -115,7 +115,6 @@ export default {
 
 section {
     padding: 0 170px;
-    height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -178,6 +177,9 @@ a {
 
      .contact-fields-container {
         margin: 0;
+    }
+    #freelance-contact-text {
+        width: 100%;
     }
 }
 
