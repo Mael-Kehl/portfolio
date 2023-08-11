@@ -96,11 +96,11 @@ export default {
 
         .presentation-div {
             width: 100vw;
-            padding: 40px;
+            padding: 0px;
         }
 
         h1 {
-            font-size: 55px;
+            font-size: 3em;
             margin-bottom: 20px;
         }
 

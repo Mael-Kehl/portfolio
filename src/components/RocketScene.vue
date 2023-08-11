@@ -4,7 +4,6 @@
 
 <script>
 import * as Three from 'three';
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import {GLTFLoader} from 'three/examples/jsm/loaders/GLTFLoader';
 // import rocketObject from '../../public/assets/models/rocket.gltf';
 
@@ -17,11 +16,12 @@ export default {
     init: function() {
         const meshesInitialPos = new Three.Vector3(0.5, 0, 0);
         const meshesInitialRot = new Three.Vector3(0, 1.1, 0);
-        let rocketobject = {
-            rotation: {
-                z: 0
-            }
-        };
+
+        this.clock = new Three.Clock();
+        this.delta = 0;
+        //For 30 fps
+        this.interval = 1/50;
+
 
         let container = document.getElementById('container');
         this.gltfloader = new GLTFLoader();
@@ -75,17 +75,23 @@ export default {
     },
     animate: function() {
         requestAnimationFrame(this.animate);
-        
-        if (this.rocketobject)
-            this.rocketobject.scene.children[0].rotation.z += 0.1;
+        this.delta += this.clock.getDelta();
 
-        // this.controls.update();
-        this.renderer.render(this.scene, this.camera);
+        if (this.delta > this.interval) {
+            if (this.rocketobject) {
+                this.rocketobject.scene.children[0].rotation.z += 0.1;
+            }
+
+            // this.controls.update();
+            this.renderer.render(this.scene, this.camera);
+            this.delta = this.delta % this.interval;
+        }
+        
     },
     onresize: function() {
         const w = this.container.clientWidth;
         const h = this.container.clientHeight;
-        this.camera.aspect = w / h; 
+        this.camera.aspect = w / h;
         this.camera.updateProjectionMatrix();
     }
   },
@@ -107,6 +113,7 @@ export default {
     @media screen and (max-width: 800px) {
         #container {
             min-height: 250px;
+            width: 100%;
         }
     }
 </style>
