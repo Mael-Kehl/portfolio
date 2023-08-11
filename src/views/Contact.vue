@@ -82,7 +82,6 @@
 
 <script>
 
-import PhoneIcon from '../components/icons/PhoneIcon.vue';
 import GithubIcon from '../components/icons/GithubIcon.vue';
 import SmartPhoneIcon from '../components/icons/SmartPhoneIcon.vue';
 import ProtonIcon from '../components/icons/MailIcon.vue';
@@ -95,7 +94,6 @@ import PaypalIcon from '../components/icons/PaypalIcon.vue';
 
 export default {
     components: {
-    PhoneIcon,
     GithubIcon,
     SmartPhoneIcon,
     ProtonIcon,
