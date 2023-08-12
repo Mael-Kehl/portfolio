@@ -42,13 +42,6 @@ export default {
         // this.helper = new Three.DirectionalLightHelper( this.directionnal, 1 );
         // this.scene.add(this.helper);
 
-        this.cube = new Three.Mesh(
-            new Three.BoxGeometry(0.1,0.1,0.1),
-            new Three.MeshLambertMaterial({color: 0xff0000})
-        )
-        this.cube.position.set(0,0,0);
-        // this.scene.add(this.cube);
-
         this.gltfloader.load('assets/models/rocket.gltf', (rocket) => {
             rocket.scene.scale.set(1,1,1);
             this.rocketobject = rocket;
@@ -59,8 +52,6 @@ export default {
             this.scene.add(rocket.scene);
         })
 
-
-    
         this.renderer = new Three.WebGLRenderer({
             antialias: true, 
             alpha: true

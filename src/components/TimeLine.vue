@@ -98,6 +98,11 @@ aside {
     p {
         text-align: justify;
         width: 100%;
+        font-size: 12px;
+    }
+
+    span {
+        font-size: 14px;
     }
 
     h3 {
