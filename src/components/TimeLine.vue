@@ -98,7 +98,7 @@ aside {
     p {
         text-align: justify;
         width: 100%;
-        font-size: 12px;
+        font-size: 13px;
     }
 
     span {
@@ -107,6 +107,11 @@ aside {
 
     h3 {
         width: 100%;
+        font-size: 16px;
+    }
+
+    h4 {
+        font-size: 14px;
     }
     .date-circle {
         width: 80px;
@@ -115,7 +120,7 @@ aside {
     }
 
     .linking-line {
-        height: 155px;
+        height: 135px;
     }
 
     aside {
