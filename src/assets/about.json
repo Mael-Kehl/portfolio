@@ -1,0 +1,20 @@
+{
+    "fr" : {
+        "pageTitle": "à propos",
+        "aboutText" : "Originaire des montagnes <strong>Vosgiennes</strong>, je suis un <strong>développeur</strong> passioné en quète de missions <strong>freelance</strong> qui prépare un diplôme <strong>d'ingénieur</strong> par apprentissage chez <strong>Atos</strong> et <strong>Polytech Nancy</strong>.",
+        "studiesTitle" : "Études", 
+        "experiencesTitle" : "Expériences",
+        "techSkillsTitle" : "Compétences Techniques",
+        "softSkillsTitle" : "Points forts",
+        "softSkillsText" : "Fort des diverses missions que l'on m'a confié, je sais travailler en <strong>autonomie</strong> avec <strong>rigueur</strong>. Je suis <strong>motivé</strong> et je donne toujours le <strong>meilleur</strong> de moi même pour mener à bien un projet.</p>"
+    },
+    "en" : {
+        "pageTitle": "about",
+        "aboutText" : "Hey, I'm Maël, a French <strong>passionate developer</strong> and <strong>apprentice engineer</strong> born in the <strong>Vosges</strong> Mountains. After a two year computer science degree, I'm preparing a three year work-study engineer diploma while proposing <strong>freelance services</strong>.",
+        "studiesTitle" : "Studies", 
+        "experiencesTitle" : "Experiences",
+        "techSkillsTitle" : "Technical Skills",
+        "softSkillsTitle" : "Soft Skills",
+        "softSkillsText" : "With the various missions entrusted to me, I know how to work <strong>independently</strong> with <strong>rigor</strong>. I am <strong>motivated</strong> and always give my <strong>best</strong> to complete a project."
+    }
+}

@@ -1,50 +1,94 @@
-[
-    {
-        "name": "Polytech Nancy",
-        "location": "Nancy",
-        "title": "Diplôme d'Ingénieur",
-        "mention": "",
-        "begin": "2022",
-        "end": "2025",
-        "isFinished": true,
-        "isFirst": false,
-        "en_description" : "Dual studies engineer degree in computer science, automation, network and robotics that allows me to push further my skills in a work environment while learning new things at name.",
-        "description" : "Diplôme d'ingénieur IA2R (Informatique, Automatique, Réseau et Robotique) par alternance, qui me permet d'adapter mes connaissances à un environnement de travail concret. "
-    },
-    {
-        "name": "Polytech Nancy",
-        "location": "Nancy",
-        "title": "TOEIC",
-        "mention": "910/990",
-        "begin": "2022",
-        "end": "2025",
-        "isFinished": true,
-        "isFirst": false,
-        "en_description" : "",
-        "description" : "910/990, niveau B2/C1."
-    },
-    {
-        "name": "IUT",
-        "location": "Saint-Dié-Des-Vosges",
-        "title": "DUT Informatique",
-        "mention": "",
-        "isFinished": true,
-        "isFirst": false,
-        "begin": "2020",
-        "end": "2022",
-        "en_description" : "Two-year university degree in computer science technology, where I learned and practiced the art of programming but also project management methods.",
-        "description" : "DUT Informatique où j'ai acquis de solides compétences en programmation et appris à utiliser des méthodes diverses de gestion de projet."
-    },
-    {
-        "name": "Lycée Jean-Lurçat",
-        "location": "Bruyères",
-        "title" : "Baccalauréat S",
-        "mention": "Bien",
-        "isFinished": true,
-        "isFirst": true,
-        "begin": "2017",
-        "end": "2020",
-        "en_description" : "Bachelor's degree in Science, with speciality Life and Earth sciences, and option european section english.",
-        "description" : "Baccalauréat Scientifique, option Européenne Anglais et spécialité Physique-Chimie qui m'a permis de construire de solides bases scientifiques pour la suite de mes études. "
-    }
-]
+{
+    "fr" : [
+        {
+            "name": "Polytech Nancy",
+            "location": "Nancy",
+            "title": "Diplôme d'Ingénieur",
+            "mention": "",
+            "begin": "2022",
+            "end": "2025",
+            "isFinished": true,
+            "isFirst": false,
+            "description" : "Diplôme d'ingénieur IA2R (Informatique, Automatique, Réseau et Robotique) par alternance, qui me permet d'adapter mes connaissances à un environnement de travail concret. "
+        },
+        {
+            "name": "Polytech Nancy",
+            "location": "Nancy",
+            "title": "TOEIC",
+            "mention": "910/990",
+            "begin": "2022",
+            "end": "2025",
+            "isFinished": true,
+            "isFirst": false,
+            "description" : "910/990, niveau B2/C1."
+        },
+        {
+            "name": "IUT",
+            "location": "Saint-Dié-Des-Vosges",
+            "title": "DUT Informatique",
+            "mention": "",
+            "isFinished": true,
+            "isFirst": false,
+            "begin": "2020",
+            "end": "2022",
+            "description" : "DUT Informatique où j'ai acquis de solides compétences en programmation et appris à utiliser des méthodes diverses de gestion de projet."
+        },
+        {
+            "name": "Lycée Jean-Lurçat",
+            "location": "Bruyères",
+            "title" : "Baccalauréat S",
+            "mention": "Bien",
+            "isFinished": true,
+            "isFirst": true,
+            "begin": "2017",
+            "end": "2020",
+            "description" : "Baccalauréat Scientifique, option Européenne Anglais et spécialité Physique-Chimie qui m'a permis de construire de solides bases scientifiques pour la suite de mes études. "
+        }
+    ],
+    "en" : [
+        {
+            "name": "Polytech Nancy",
+            "location": "Nancy",
+            "title": "Engineer Degree",
+            "mention": "",
+            "begin": "2022",
+            "end": "2025",
+            "isFinished": true,
+            "isFirst": false,
+            "description" : "Three-year work-study engineer degree in computer science, automation, network and robotics that allows me to push further my skills in a work environment while learning new things at name."
+        },
+        {
+            "name": "Polytech Nancy",
+            "location": "Nancy",
+            "title": "TOEIC",
+            "mention": "910/990",
+            "begin": "2022",
+            "end": "2025",
+            "isFinished": true,
+            "isFirst": false,
+            "description" : "910/990, level B2/C1."
+        },
+        {
+            "name": "University Institute of Technology",
+            "location": "Saint-Dié-Des-Vosges",
+            "title": "DUT Informatique",
+            "mention": "",
+            "isFinished": true,
+            "isFirst": false,
+            "begin": "2020",
+            "end": "2022",
+            "description" : "Two-year university degree in computer science technology, where I learned and practiced the art of programming but also project management methods."
+        },
+        {
+            "name": "Lycée Jean-Lurçat",
+            "location": "Bruyères",
+            "title" : "Baccalauréat S",
+            "mention": "Good",
+            "isFinished": true,
+            "isFirst": true,
+            "begin": "2017",
+            "end": "2020",
+            "description" : "Bachelor's degree in Science, with speciality Life and Earth sciences, and option european section english."
+        }
+    ]
+}

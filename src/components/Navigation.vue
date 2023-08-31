@@ -1,14 +1,12 @@
 <template>
     <header @onscroll="handleScroll">
         <div id="home-part">
-            <!-- <HomeIcon :width="40" :height="40" @click="$emit('setCurrentPage', 0)"/> -->
             <h1 class="home-logo" @click="$emit('setCurrentPage', 0)">MK</h1>
         </div>
         <ul class="full-screen-menu">
-            <!-- <li @click="$emit('setCurrentPage', 1)" :class=" currentPage == 1 ? 'active' : '' ">Projects</li> -->
-            <li @click="$emit('setCurrentPage', 2)" :class=" currentPage == 2 ? 'active' : '' ">À propos</li>
-            <!-- <li @click="$emit('setCurrentPage', 3)" :class=" currentPage == 3 ? 'active' : '' ">Skills</li> -->
-            <li @click="$emit('setCurrentPage', 4)" :class=" currentPage == 4 ? 'active' : '' ">Contact</li>
+            <LanguageSwitcher />
+            <li @click="$emit('setCurrentPage', 2)" :class=" currentPage == 2 ? 'active' : '' ">{{this.$store.state.translations.home.navAbout}}</li>
+            <li @click="$emit('setCurrentPage', 4)" :class=" currentPage == 4 ? 'active' : '' ">{{this.$store.state.translations.home.navContact}}</li>
         </ul>
         <div class="burger-menu-button" @click="showPhoneMenu()">
           <span class="burger-menu-button-bar"></span>
@@ -20,8 +18,9 @@
             <Cross id="burger-cross" @click="closePhoneMenu()"/>
             <ul class="phone-menu-list">
                 <li @click="closePhoneMenu(); $emit('setCurrentPage', 0);" :class=" currentPage == 1 ? 'active' : ''">Home</li> 
-                <li @click="closePhoneMenu(); $emit('setCurrentPage', 2);" :class=" currentPage == 2 ? 'active' : ''">À propos</li> 
-                <li @click="closePhoneMenu(); $emit('setCurrentPage', 4);" :class=" currentPage == 4 ? 'active' : '' ">Contact</li>
+                <li @click="closePhoneMenu(); $emit('setCurrentPage', 2);" :class=" currentPage == 2 ? 'active' : ''">{{this.$store.state.translations.home.navAbout}}</li> 
+                <li @click="closePhoneMenu(); $emit('setCurrentPage', 4);" :class=" currentPage == 4 ? 'active' : '' ">{{this.$store.state.translations.home.navContact}}</li>
+                <LanguageSwitcher />
             </ul>
         </div>
             
@@ -34,6 +33,7 @@
 <script>
 import HomeIcon from './icons/HomeIcon.vue';
 import Cross from './icons/Cross.vue';
+import LanguageSwitcher from './LanguageSwitcher.vue';
 
 export default {
   emits: ['setCurrentPage'],
@@ -41,7 +41,7 @@ export default {
     currentPage: Number
   },
   components: {
-    HomeIcon, Cross
+    HomeIcon, Cross, LanguageSwitcher
   },
   methods: {
     showPhoneMenu() {

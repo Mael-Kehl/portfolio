@@ -7,12 +7,8 @@
         </div>
         <aside>
             <div class="contact-fields-container">
-                <h2>Comment faire appel à moi ?</h2>
-                <p id="freelance-contact-text">
-                    Actuellement <strong>auto-entrepreneur</strong>, vous pouvez me faire part de votre <strong>projet</strong> par <strong>Mail</strong> ou via <strong>Malt</strong>. 
-                    Je suis spécialisé dans le développement de <strong>solutions web</strong> pour les entreprises, allant d'un <strong>site vitrine</strong> à une infrastracture complète de <strong>e-boutique</strong>. 
-                    <br><br>N° de <strong>SIRET</strong> : 95275322600010
-                </p>
+                <h2>{{this.$store.state.translations.contact.introTitle}}</h2>
+                <p id="freelance-contact-text" v-html="this.$store.state.translations.contact.introText"></p>
                 <article  class="contact-field">
                     <ProtonIcon :width="30" :height="30"/>
                     <a href="mailto:mael-kehl@protonmail.com">
@@ -52,7 +48,7 @@
                
             </div>
             <div class="contact-fiels-container">
-                <h2>Impression 3D</h2>
+                <h2>{{this.$store.state.translations.contact.printText}}</h2>
                 
                 <article  class="contact-field">
                     <EtsyIcon :width="30" :height="30"/>
@@ -66,7 +62,7 @@
                         thingiverse.com/dashvolt/designs
                     </a>
                 </article>
-                <h2>Un petit tip ? </h2>
+                <h2>{{this.$store.state.translations.contact.tipText}}</h2>
                 <article  class="contact-field">
                     <PaypalIcon :width="30" :height="30"/>
                     <a href="https://www.paypal.me/maelkehl">

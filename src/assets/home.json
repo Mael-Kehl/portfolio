@@ -1,0 +1,18 @@
+{
+    "fr" : {
+        "heyText" : "Hey, je m'appelle",
+        "devText" : "Développeur Freelance",
+        "engText" : "& Apprenti Ingénieur",
+        "profileText" : "mon profil",
+        "navAbout" : "À propos",
+        "navContact" : "Contact"
+    },
+    "en" : {
+        "heyText" : "Hey, my name is",
+        "devText" : "Freelance Developer",
+        "engText" : "& Apprentice Engineer",
+        "profileText" : "my profile",
+        "navAbout" : "About",
+        "navContact" : "Contact"
+    }
+}

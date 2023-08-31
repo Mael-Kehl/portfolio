@@ -1,26 +1,50 @@
-[
-    {
-        "name": "Atos",
-        "location": "Metz",
-        "title": "Développeur / Ingénieur",
-        "mention": "",
-        "isFinished": true,
-        "isFirst": false,
-        "begin": "2022",
-        "end": "2025",
-        "en_description" : "Three year dual studies contract where I work on french health digital agencies softwares. It groups mobile, web and java development and maintain. ",
-        "description" : "Développement mobile, web et Java pour d'importants acteurs dans le domaine de la santé française. Flutter/Spring"
-    },
-    {
-        "name": "OnlineFormaPro",
-        "location": "Vesoul",
-        "title" : "Developpeur",
-        "mention": "",
-        "isFinished": true,
-        "isFirst": true,
-        "begin": "2022",
-        "end": "2022",
-        "en_description" : "Two month internship where I add to developp an internal tool allowing to get feedback from clients following an E-learning training.",
-        "description" : "Développement d'un outil web destiné à la création et à la gestion de tickets incidents. Vue/Symfony"
-    }
-]
+{
+    "fr" : [
+        {
+            "name": "Atos",
+            "location": "Metz",
+            "title": "Développeur / Ingénieur",
+            "mention": "",
+            "isFinished": true,
+            "isFirst": false,
+            "begin": "2022",
+            "end": "2025",
+            "description" : "Développement mobile, web et Java pour d'importants acteurs dans le domaine de la santé française. Flutter/Spring"
+        },
+        {
+            "name": "OnlineFormaPro",
+            "location": "Vesoul",
+            "title" : "Developpeur",
+            "mention": "",
+            "isFinished": true,
+            "isFirst": true,
+            "begin": "2022",
+            "end": "2022",
+            "description" : "Développement d'un outil web destiné à la création et à la gestion de tickets incidents. Vue/Symfony"
+        }
+    ],
+    "en" : [
+        {
+            "name": "Atos",
+            "location": "Metz",
+            "title": "Developer / Engineer",
+            "mention": "",
+            "isFinished": true,
+            "isFirst": false,
+            "begin": "2022",
+            "end": "2025",
+            "description" : "Three year dual studies contract where I work on french health digital agencies softwares. Mobile/web/backend development. "
+        },
+        {
+            "name": "OnlineFormaPro",
+            "location": "Vesoul",
+            "title" : "Developpeur",
+            "mention": "",
+            "isFinished": true,
+            "isFirst": true,
+            "begin": "2022",
+            "end": "2022",
+            "description" : "Two month internship where I had to developp an internal tool getting feedback from clients. Vue/Symfony"
+        }
+    ]
+}

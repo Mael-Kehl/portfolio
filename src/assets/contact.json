@@ -1,0 +1,15 @@
+{
+    "fr" : {
+        "introTitle" : "Comment faire appel à moi ?",
+        "introText" : "Actuellement <strong>auto-entrepreneur</strong>, vous pouvez me faire part de votre <strong>projet</strong> par <strong>Mail</strong> ou via <strong>Malt</strong>. Je suis spécialisé dans le développement de <strong>solutions web</strong> pour les entreprises, allant d'un <strong>site vitrine</strong> à une infrastracture complète de <strong>e-boutique</strong>. <br><br>N° de <strong>SIRET</strong> : 95275322600010",
+        "printText" : "Impression 3D",
+        "tipText" : "Un petit Tip ?"
+
+    },
+    "en" : {
+        "introTitle" : "How to reach me ?",
+        "introText" : "Currently <strong>self-employed</strong>, you can tell me about your <strong>project</strong> by <strong>Mail</strong> or via <strong>Malt</strong>. I'm specialized in <strong>web solutions</strong> development for businesses, ranging from <strong>showcase website</strong> to complete <strong>e-store</strong> infrastructure. <br><br> <strong>SIRET</strong> number: 95275322600010",
+        "printText" : "3D print",
+        "tipText" : "A lil' Tip ?"
+    }
+}

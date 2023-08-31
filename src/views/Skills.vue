@@ -1,17 +1,7 @@
 <template>
     <article>
         <div>
-            <h2>Compétences techniques</h2>
-            <!-- <div class="graph-view-container">
-                <div class="graph-view">
-                    <div class="node" id="vue-js-node" :style="{top: pos+'px'}">
-                        Vue.js
-                    </div>
-                    <div class="node" id="three-js-node" :style="{top: pos+'px'}">
-                        three.js
-                    </div>
-                </div>
-            </div> -->
+            <h2>{{this.$store.state.translations.about.techSkillsTitle}}</h2>
             <div class="technical-skills">
                 <span>
                     <img src="/assets/images/logo-java.png" alt="Java icon">
@@ -40,11 +30,9 @@
             </div>
         </div>
         <div class="soft-skills">
-            <h2>Points forts</h2>
+            <h2>{{this.$store.state.translations.about.softSkillsTitle}}</h2>
 
-            <p id="soft-skills-text">Fort des diverses missions que l'on m'a confié, je sais travailler en <strong>autonomie</strong>
-            avec <strong>rigueur</strong>. Je suis <strong>motivé</strong> et je n'hésite pas à faire preuve
-            <strong>d'initiative</strong> et à donner le <strong>meilleur</strong> de moi même pour mener à bien un projet.</p>
+            <p id="soft-skills-text" v-html="this.$store.state.translations.about.softSkillsText"></p>
         </div>
     </article>
        
@@ -105,7 +93,7 @@ h2 {
 
 #soft-skills-text {
     margin-top: 30px;
-    width: 100%;
+    max-width: 100%;
     text-align: justify;
 }
 

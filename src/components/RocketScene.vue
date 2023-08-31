@@ -5,7 +5,6 @@
 <script>
 import * as Three from 'three';
 import {GLTFLoader} from 'three/examples/jsm/loaders/GLTFLoader';
-// import rocketObject from '../../public/assets/models/rocket.gltf';
 
 export default {
   data() {
@@ -38,9 +37,6 @@ export default {
         this.directionnal = new Three.PointLight(0xffffff, 1.0);
         this.directionnal.position.set(0,2,2);
         this.scene.add(this.directionnal);
-
-        // this.helper = new Three.DirectionalLightHelper( this.directionnal, 1 );
-        // this.scene.add(this.helper);
 
         this.gltfloader.load('assets/models/rocket.gltf', (rocket) => {
             rocket.scene.scale.set(1,1,1);

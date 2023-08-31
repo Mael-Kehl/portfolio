@@ -3,16 +3,16 @@
     <div class="presentation-div">
         <div class="presentation-div-text-container">
             <h4>
-                Hey, je m'appelle
+                {{ this.$store.state.translations.home.heyText }}
             </h4>
             <h1>MAËL KEHL</h1>
-            <p>Développeur Freelance </p>
-            <p>& Apprenti Ingénieur</p>
+            <p>{{ this.$store.state.translations.home.devText }} </p>
+            <p>{{ this.$store.state.translations.home.engText }}</p>
             <div class="projects-link">
                 <p id="projects-button" @click="$emit('setCurrentPage', 2)">
                     Check 
                 </p>
-                <p id="projects-text"> mon profil</p>
+                <p id="projects-text"> {{ this.$store.state.translations.home.profileText }}</p>
             </div>
         </div>
     </div>
